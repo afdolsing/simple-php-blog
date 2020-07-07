@@ -3,16 +3,16 @@
 if(isset($_GET['preview'])){
     $preview = $_GET['preview'];
 }else{
-    $preview = "dashboard";
+    $preview = "home";
 }
 
-if($preview == "dashboard"){
-    include("dashboard.php");
+if($preview == "home"){
+    include("home.php");
 }elseif($preview == "quit"){
     include("quit.php");
 
 }elseif($preview == "menu"){
-    include("menu/menu_preview");
+    include("menu/menu_preview.php");
 }elseif($preview == "menu_add"){
     include("menu/menu_add.php");
 }elseif($preview == "menu_add_process"){
