@@ -18,10 +18,10 @@ define("INDEX",true);
     <div class="container">
         <div class="header"></div>
         <div class="menu">
-           <?php require('menu.php') ?>
+           <?php include('menu.php') ?>
         </div>
         <div class="content">
-
+            <?php include('content.php') ?>
         </div>
         <div class="footer">
             <p>Copyright &copy; afdolsing</p>
