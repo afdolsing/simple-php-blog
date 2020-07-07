@@ -16,15 +16,16 @@ define("INDEX",true);
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="menu">
-                <?php require("menu.php") ?>
-            </div>
-            <div class="content">
-                <?php require("content.php") ?>
-            </div>
+        <div class="header"></div>
+        <div class="menu">
+           <?php require('menu.php') ?>
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; afdolsing</p>
         </div>
     </div>
-    
 </body>
 </html>
