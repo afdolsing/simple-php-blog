@@ -10,7 +10,7 @@ if(isset($_POST['add'])){
     mysqli_query($conn, "INSERT INTO blog_menu (title, link, thread) VALUE (
         '$title', '$link', '$thread')");
 
-    echo "Data has Sucess added";
+    echo "data added successfully";
     echo "<meta http-equiv='refresh'
     content='1; url=?preview=menu'>";
 }
