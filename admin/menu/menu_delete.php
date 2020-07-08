@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include("../db/config.php");
 mysqli_query($conn, "DELETE FROM blog_menu WHERE menu_id = '$_GET[id]'");
 
 echo "delete success";

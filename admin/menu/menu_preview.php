@@ -12,7 +12,7 @@
     </tr>
 
     <?php
-    include('config.php');
+    include('../db/config.php');
 
     $no = 1;
     $sql = mysqli_query($conn,"SELECT * FROM blog_menu ORDER BY thread");

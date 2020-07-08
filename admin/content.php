@@ -15,17 +15,13 @@ if($preview == "home"){
     include("menu/menu_preview.php");
 }elseif($preview == "menu_add"){
     include("menu/menu_add.php");
-}elseif($preview == "menu_add_process"){
-    include("menu/menu_add_process.php");
 }elseif($preview == "menu_edit"){
     include("menu/menu_edit.php");
-}elseif($preview == "menu_edit_process"){
-    include("menu/menu_edit_process.php");
 }elseif($preview == "menu_delete"){
     include("menu/menu_delete.php");
 
 }elseif($preview == "page"){
-    include("page/page_preview");
+    include("page/page_preview.php");
 }elseif($preview == "page_add"){
     include("page/page_add.php");
 }elseif($preview == "page_add_process"){
@@ -38,7 +34,7 @@ if($preview == "home"){
     include("page/page_delete.php");
 
 }elseif($preview == "article"){
-    include("article/article_preview");
+    include("article/article_preview.php");
 }elseif($preview == "article_add"){
     include("article/article_add.php");
 }elseif($preview == "article_add_process"){

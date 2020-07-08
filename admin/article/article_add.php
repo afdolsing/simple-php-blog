@@ -14,21 +14,21 @@ if(isset($_POST['add'])){
 }
 ?>
 
-<h2>Add Menu</h2>
+<h2>Add Article</h2>
 
-<form action="" method="POST" name="add">
+<form action="" method="POST" enctype="multipart/form-data">
     <table>
         <tr>
-            <td>Menu Title</td>
+            <td>Article Title</td>
             <td><input type="text" name="title"></td>
         </tr>
         <tr>
-            <td>Link</td>
-            <td><input type="text" name="link"></td>
+            <td>Image</td>
+            <td><input type="file" name="image"></td>
         </tr>
         <tr>
-            <td>Thread</td>
-            <td><input type="text" name="thread"></td>
+            <td>Content</td>
+            <td><textarea name="content" cols="30" rows="15"></textarea></td>
         </tr>
         <tr>
             <td></td>

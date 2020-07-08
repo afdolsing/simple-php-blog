@@ -1,12 +1,25 @@
 <?php
-include('config.php');
+include('../db/config.php');
 $sql = mysqli_query($conn, "SELECT * FROM blog_menu WHERE menu_id='$_GET[id]'");
 $data = mysqli_fetch_array($sql);
+
+if(isset($_POST['edit'])){
+    mysqli_query($conn, "UPDATE blog_menu SET 
+    title = '$_POST[title]',
+    link = '$_POST[link]',
+    thread = '$_POST[thread]'
+    WHERE menu_id = '$_POST[id]'
+    ");
+
+    echo "edit success";
+    echo "<meta http-equiv='refresh'
+    content='1; url=?preview=menu'>";
+}
 
 ?>
 
 <h2>Edit Menu</h2>
-<form action="?preview=menu_edit_process" method="POST">
+<form action="" method="POST">
     <input type="hidden" name="id" value="<?= $data['menu_id']; ?>">
     <table>
         <tr>
