@@ -10,7 +10,7 @@ if(isset($_POST['add'])){
     mysqli_query($conn, "INSERT INTO blog_menu (title, link, thread) VALUE (
         '$title', '$link', '$thread')");
 
-    header("Location: ?preview=menu");
+    header("Location: ?preview=article");
 }
 ?>
 
@@ -28,7 +28,7 @@ if(isset($_POST['add'])){
         </tr>
         <tr>
             <td>Content</td>
-            <td><textarea name="content" cols="30" rows="15"></textarea></td>
+            <td><textarea name="content" cols="100" rows="15"></textarea></td>
         </tr>
         <tr>
             <td></td>
