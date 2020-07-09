@@ -33,8 +33,12 @@ if($preview == "home"){
     include("article/article_preview.php");
 }elseif($preview == "article_add"){
     include("article/article_add.php");
+}elseif($preview == "article_add_process"){
+    include("article/article_add_process.php");
 }elseif($preview == "article_edit"){
     include("article/article_edit.php");
+}elseif($preview == "article_edit_process"){
+    include("article/article_edit_process.php");
 }elseif($preview == "article_delete"){
     include("article/article_delete.php");
 

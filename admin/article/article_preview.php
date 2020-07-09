@@ -20,7 +20,7 @@
     <tr>
         <td><?= $no++; ?></td>
         <td><?= $data['title']; ?></td>
-        <td><?= $data['date']; ?></td>
+        <td><?= $data['article_date']; ?></td>
         <td>
             <a href="?preview=article_edit&id=<?= $data['article_id']; ?>">Edit</a>
             <a href="?preview=article_delete&id=<?= $data['article_id']; ?>">Delete</a>
