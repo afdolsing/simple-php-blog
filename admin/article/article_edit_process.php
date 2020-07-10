@@ -14,7 +14,7 @@ if(isset($_POST['edit'])){
     $date = date('Y-m-d');
     $content = $_POST['content'];
 
-    // jika tidak ada gambar
+    // jika tidak ada gambar, gambar lama tidak diganti
     if($error === 4){
         mysqli_query($conn, "UPDATE blog_article SET 
         title = '$title', 
@@ -24,7 +24,7 @@ if(isset($_POST['edit'])){
         ");
     }else{
         $data = mysqli_fetch_array(mysqli_query($conn, "SELECT * FROM blog_article WHERE article_id = '$article_id'"));
-        // jika ada gamabr, hapus gambar lama
+        // jika ada gambar, hapus gambar lama
         if ($data['image_name'] != ""){
             unlink("../image/article/$data[image_name]");
             move_uploaded_file($image_location,"../image/article/$image_name");
@@ -41,7 +41,5 @@ if(isset($_POST['edit'])){
     echo "Success edit";
     echo "<meta http-equiv='refresh'
     content='1; url=?preview=article'>";
-
 }
-
 ?>
