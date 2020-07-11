@@ -58,4 +58,3 @@ if(isset($_POST['add'])){
         content='1; url=?preview=article_add'>";
     }
 }
-?> 

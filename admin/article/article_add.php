@@ -1,4 +1,3 @@
-
 <h2>Add Article</h2>
 
 <form action="?preview=article_add_process" method="POST" enctype="multipart/form-data">
