@@ -4,7 +4,7 @@
     <table>
         <tr>
             <td>Article Title</td>
-            <td><input type="text" name="title" required></td>
+            <td><input type="text" name="title" size="50" required></td>
         </tr>
         <tr>
             <td>Image</td>

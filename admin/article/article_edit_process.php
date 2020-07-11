@@ -38,7 +38,7 @@ if(isset($_POST['edit'])){
             ");
         }
     }
-    echo "Success edit";
+    echo "Edit Success";
     echo "<meta http-equiv='refresh'
     content='1; url=?preview=article'>";
 }

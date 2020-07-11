@@ -12,6 +12,6 @@ if ($data['image_name'] != "") {
     mysqli_query($conn, "DELETE FROM blog_article WHERE article_id = '$id'");
 }
 
-echo "Success Delete";
+echo "Delete Success";
 echo "<meta http-equiv='refresh'
 content='1; url=?preview=article'>";
