@@ -1,9 +1,14 @@
 <?php
 
 session_start();
-require("../lib/connection.php");
-define("INDEX", true);
+require("../db/config.php");
 
+// cek session
+if(!isset($_SESSION['login'])){
+    // jika tidak ada session kembalikan ke login
+    header('location: index.php');
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
