@@ -10,6 +10,7 @@ if ($preview == "home") {
     include("home.php");
 } elseif ($preview == "quit") {
     include("quit.php");
+// menu
 } elseif ($preview == "menu") {
     include("menu/menu_preview.php");
 } elseif ($preview == "menu_add") {
@@ -18,6 +19,7 @@ if ($preview == "home") {
     include("menu/menu_edit.php");
 } elseif ($preview == "menu_delete") {
     include("menu/menu_delete.php");
+// page   
 } elseif ($preview == "page") {
     include("page/page_preview.php");
 } elseif ($preview == "page_add") {
@@ -26,6 +28,7 @@ if ($preview == "home") {
     include("page/page_edit.php");
 } elseif ($preview == "page_delete") {
     include("page/page_delete.php");
+// article
 } elseif ($preview == "article") {
     include("article/article_preview.php");
 } elseif ($preview == "article_add") {
@@ -38,14 +41,20 @@ if ($preview == "home") {
     include("article/article_edit_process.php");
 } elseif ($preview == "article_delete") {
     include("article/article_delete.php");
+// gallery
 } elseif ($preview == "gallery") {
-    include("gallery/gallery_preview");
+    include("gallery/gallery_preview.php");
 } elseif ($preview == "gallery_add") {
     include("gallery/gallery_add.php");
-} elseif ($preview == "gallery_edit") {
+} elseif ($preview == "gallery_add_process") {
+    include("gallery/gallery_add_process.php");
+}elseif ($preview == "gallery_edit") {
     include("gallery/gallery_edit.php");
-} elseif ($preview == "gallery_delete") {
+}elseif ($preview == "gallery_edit_process") {
+    include("gallery/gallery_edit_process.php");
+}elseif ($preview == "gallery_delete") {
     include("gallery/gallery_delete.php");
+// message
 } elseif ($preview == "message") {
     include("message/message_preview");
 } elseif ($preview == "message_foward") {
