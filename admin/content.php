@@ -61,4 +61,11 @@ if ($preview == "home") {
     include("message/mess_reply.php");
 } elseif ($preview == "mess_delete") {
     include("message/mess_delete.php");
+
+// profile
+} elseif ($preview == "user_edit") {
+    include("user/user_edit.php");
+}
+else{
+    echo "content not found";
 }
