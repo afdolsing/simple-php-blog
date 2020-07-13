@@ -56,11 +56,9 @@ if ($preview == "home") {
     include("gallery/gallery_delete.php");
 // message
 } elseif ($preview == "message") {
-    include("message/message_preview");
-} elseif ($preview == "message_foward") {
-    include("message/message_foward.php");
-} elseif ($preview == "message_add_process") {
-    include("message/message_add_process.php");
-} elseif ($preview == "message_edit") {
-    include("message/message_edit.php");
+    include("message/mess_preview.php");
+} elseif ($preview == "mess_reply") {
+    include("message/mess_reply.php");
+} elseif ($preview == "mess_delete") {
+    include("message/mess_delete.php");
 }
