@@ -97,3 +97,12 @@ body{
 .menu ul ul li:hover{
     background: #172659;
 }
+.comment{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+.formcomment{
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}

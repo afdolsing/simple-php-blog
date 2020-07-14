@@ -18,7 +18,9 @@ else $preview = "home";
     elseif ($preview == "contact")
         include("content/contact.php");
     elseif ($preview == "search")
-        include("search.php");
+        include("content/search.php");
+    elseif ($preview == "comment_process")
+        include("content/comment_process.php");  
 
     else echo "page not found in content";
     ?>

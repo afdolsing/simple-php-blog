@@ -19,9 +19,7 @@ while($data = mysqli_fetch_array($article)):
         <img src="image/article/<?= $data['image_name']; ?>" class="image-article" height="100"">
 
         <?= $content; ?>
-        <a href="?preview=article_detail&id=
-        <?= $data['article_id']; ?>
-        ">full</a>
+        <a href="?preview=article_detail&id=<?= $data['article_id']; ?>">full</a>
     </p>
 </div>
 <?php endwhile;
