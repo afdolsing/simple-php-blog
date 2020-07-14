@@ -4,6 +4,7 @@ if(!defined("INDEX")) die("page not found");
 <ul class="">
     <li><a href="admin.php">Home</a></li>
     <li><a href="?preview=menu">Menu</a></li>
+    <li><a href="?preview=submenu">SubMenu</a></li>
     <li><a href="?preview=page">Page</a></li>
     <li><a href="?preview=article">Article</a></li>
     <li><a href="?preview=gallery">Gallery</a></li>

@@ -20,8 +20,18 @@ if ($preview == "home") {
     include("menu/menu_edit.php");
 } elseif ($preview == "menu_delete") {
     include("menu/menu_delete.php");
+// submenu  
+} elseif ($preview == "submenu") {
+    include("submenu/submenu_preview.php");
+} elseif ($preview == "submenu_add") {
+    include("submenu/submenu_add.php");
+} elseif ($preview == "submenu_edit") {
+    include("submenu/submenu_edit.php");
+} elseif ($preview == "submenu_delete") {
+    include("submenu/submenu_delete.php");
 // page   
-} elseif ($preview == "page") {
+}
+elseif ($preview == "page") {
     include("page/page_preview.php");
 } elseif ($preview == "page_add") {
     include("page/page_add.php");
