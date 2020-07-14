@@ -82,3 +82,18 @@ body{
     background: #eee;
     border: 1px solid #ccc;
 }
+.menu ul ul{
+    position: absolute;
+    background: #40569e;
+    width: 150px;
+    display: none;
+}
+.menu li:hover ul{
+    display: block;
+}
+.menu ul ul li{
+    width: 100%;
+}
+.menu ul ul li:hover{
+    background: #172659;
+}

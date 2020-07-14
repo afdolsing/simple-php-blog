@@ -20,7 +20,7 @@
     <tr>
         <td><?= $no++; ?></td>
         <td><?= $data['title']; ?></td>
-        <td>?preview=page&id<?= $data['page_id']; ?></td>
+        <td>?preview=page&id=<?= $data['page_id']; ?></td>
         <td>
             <a href="?preview=page_edit&id=<?= $data['page_id']; ?>">Edit</a>
             <a href="?preview=page_delete&id=<?= $data['page_id']; ?>">Delete</a>

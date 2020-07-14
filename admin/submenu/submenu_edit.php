@@ -6,7 +6,7 @@ $data = mysqli_fetch_array($sql);
 if(isset($_POST['edit'])){
     mysqli_query($conn, "UPDATE blog_submenu SET 
     title = '$_POST[title]',
-    id_menu = '$_POST[parent]',
+    menu_id = '$_POST[parent]',
     link = '$_POST[link]',
     thread = '$_POST[thread]'
     WHERE submenu_id = '$_POST[id]'
@@ -35,9 +35,9 @@ if(isset($_POST['edit'])){
                     $sqlmenu = mysqli_query($conn, "SELECT * FROM blog_menu");
                     while($datamenu = mysqli_fetch_array($sqlmenu)){
                         if($datamenu['menu_id']== $data['menu_id']){
-                            echo "<option value='$datamenu[menu_id]'>$datamenu[menu_id]</option>";
+                            echo "<option value='$datamenu[menu_id]'>$datamenu[title]</option>";
                         }else{
-                            echo "<option value='$datamenu[menu_d]'>$data[menu_id]</option>";
+                            echo "<option value='$datamenu[menu_id]'>$datamenu[title]</option>";
                         }
                         
                     }
