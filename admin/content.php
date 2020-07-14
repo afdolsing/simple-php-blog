@@ -1,5 +1,6 @@
 <?php
 
+if(!defined("INDEX")) die("page not found");
 if (isset($_GET['preview'])) {
     $preview = $_GET['preview'];
 } else {

@@ -2,7 +2,7 @@
 
 session_start();
 include("db/config.php");
-// simpan nilai tetap INDEX
+// simpan INDEX sebagai nilai tetap
 define("INDEX", true);
 ?>
 <!DOCTYPE html>

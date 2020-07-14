@@ -1,6 +1,6 @@
 <?php
 
-if(!defined("INDEX")) die("...");
+if(!defined("INDEX")) die("page not found");
 include("db/config.php");
 
 $article = mysqli_query($conn, "SELECT * FROM blog_article ORDER BY article_id DESC");

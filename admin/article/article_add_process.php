@@ -12,7 +12,7 @@ if(isset($_POST['add'])){
 
     $date = date('Y-m-d');
     $title = $_POST['title'];
-    $content = $_POST['content'];
+    $content = stripcslashes($_POST['content']);
 
 
     // 4 = cek apakah tidak ada gambar yang di upload

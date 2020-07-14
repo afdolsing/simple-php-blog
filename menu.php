@@ -1,5 +1,5 @@
 <?php
-if(!defined("INDEX")) die("...");
+if(!defined("INDEX")) die("page not found");
 include("db/config.php");
 ?>
 
