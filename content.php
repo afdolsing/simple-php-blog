@@ -1,7 +1,6 @@
 <?php
 if(!defined("INDEX")) die("page not found");
 
-
 if(isset($_GET['preview'])) $preview = $_GET['preview'];
 else $preview = "home";
 ?>
@@ -18,7 +17,9 @@ else $preview = "home";
     include("content/article_detail.php");
     elseif($preview == "contact")
     include("content/contact.php");
+    elseif($preview == "search")
+    include("search.php");
 
-    else echo "page not found";
+    else echo "page not found in content";
     ?>
 </div>

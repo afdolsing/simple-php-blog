@@ -1,5 +1,4 @@
 <?php
-
 if(!defined("INDEX")) die("page not found");
 include("db/config.php");
 
@@ -7,11 +6,16 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
 // line -> batas (jumlah article)
 $line = 2;
 $position = ($page-1) * $line;
+$search = $_POST['word'];
 
-$article = mysqli_query($conn, "SELECT * FROM blog_article ORDER BY article_id DESC LIMIT $position, $line");
-while($data = mysqli_fetch_array($article)):
-    $content = substr($data['content'],0,800);
+$article = mysqli_query($conn, "SELECT * FROM blog_article WHERE content LIKE '%$search%' ORDER BY article_id DESC LIMIT $position, $line");
+$all_article = mysqli_num_rows($article);
+if($all_article > 0):
+    echo "result : <b>$search</b>";
+    while($data = mysqli_fetch_array($article)):
+        $content = substr($data['content'],0,800);
 ?>
+
 <div class="article">
     <h2 class="title"><?= $data['title']; ?></h2>
     <p>
@@ -64,4 +68,7 @@ if($page < $all_page){
     echo "<span>Last</span>";
 }
 echo "</div>";
+
+endif;
 ?>
+

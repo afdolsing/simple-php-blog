@@ -39,7 +39,7 @@ body{
 .content{
     background: #fff;
     min-height: 400px;
-    padding: 10px;
+    overflow: hidden;
 }
 .footer {
     background: #364a88 ;
@@ -72,4 +72,13 @@ body{
     padding: 3px;
     margin-right: 5px;
     border-bottom: 2px solid #ccc;
+}
+.paging{
+    text-align: center;
+}
+.paging span{
+    padding: 5px 10px;
+    margin-right: 5px;
+    background: #eee;
+    border: 1px solid #ccc;
 }
