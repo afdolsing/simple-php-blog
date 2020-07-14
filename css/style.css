@@ -1,0 +1,75 @@
+body{
+    background: gainsboro;
+    font: 12px arial;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: rgba(23, 38, 89, 0.5);
+}
+.header {
+    background: url('img/header.jpg') no-repeat;
+    height: 100px;
+}
+.menu{
+    background: #172659;
+    height: 30px;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+.menu ul.right{
+    float: right;
+}
+.menu ul li{
+    float: left;
+    list-style: none;
+}
+.menu ul li a{
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #ddd;
+}
+.menu ul li a:hover{
+    background: #40569e;
+}
+.content{
+    background: #fff;
+    min-height: 400px;
+    padding: 20px;
+}
+.footer {
+    background: #364a88 ;
+    height: 50px;
+}
+.footer p{
+    color: #ccc;
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
+}
+.left{
+    width: 700px;
+    min-height: 400px;
+    overflow: hidden;
+    float: left;
+}
+.box{
+    padding: 10px;
+    overflow: hidden;
+}
+.article{
+    display: block;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.image-article{
+    float: left;
+    padding: 3px;
+    margin-right: 5px;
+    border-bottom: 2px solid #ccc;
+}

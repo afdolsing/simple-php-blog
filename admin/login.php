@@ -26,7 +26,7 @@ if(isset($_POST['login'])){
            //set session
            $_SESSION['login'] = true;
 
-           header('location: admin.php');
+           header('location:admin.php');
            exit;
        }
     }

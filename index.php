@@ -1,25 +1,18 @@
 <?php
 
 session_start();
-require("../db/config.php");
+include("db/config.php");
+// simpan nilai tetap INDEX
 define("INDEX", true);
-
-// cek session
-if(!isset($_SESSION['login'])){
-    // jika tidak ada session kembalikan ke login
-    header('location: index.php');
-    exit;
-}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-    <link rel="stylesheet" href="../css/admin.css">
+    <title>Afdolsing the Blog</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -29,7 +22,12 @@ if(!isset($_SESSION['login'])){
             <?php include('menu.php') ?>
         </div>
         <div class="content">
-            <?php include('content.php') ?>
+            <div class="left">
+                <?php include('content.php') ?>
+            </div>
+            <div class="right">
+                <?php include('sidebar.php') ?>
+            </div>
         </div>
         <div class="footer">
             <p>Copyright &copy; afdolsing</p>
