@@ -16,7 +16,7 @@ while($data = mysqli_fetch_array($article)):
         <?= $content; ?>
         <a href="?preview=article_detail&id=
         <?= $data['article_id']; ?>
-        "></a>
+        ">full</a>
     </p>
 </div>
 <?php endwhile ?>

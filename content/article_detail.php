@@ -1,10 +1,10 @@
 <?php
 if(!defined("INDEX")) die("page not found");
-include('../db/config.php');
+include('db/config.php');
 // mysqli_query($conn, "UPDATE article SET hits=hits+1
 // WHERE article_id='$_GET[id]'");
 
-$article = mysqli_query($conn, "SELECT * FROM article WHERE article_id = '$_GET[id]'");
+$article = mysqli_query($conn, "SELECT * FROM blog_article WHERE article_id = '$_GET[id]'");
 $data = mysqli_fetch_array($article);
 $content = $data['content'];
 ?>

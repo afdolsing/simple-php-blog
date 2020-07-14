@@ -1,4 +1,4 @@
-<h2>Data Halaman</h2>
+<h2>Page</h2>
 
 <a href="?preview=page_add">Add Page</a><br><br>
 
