@@ -25,7 +25,6 @@ if(isset($_POST['send'])){
     content='1; url=?preview=contact'>";
 }
 
-
 ?>
 <h2>Contact us</h2>
 <form action="" method="POST">
