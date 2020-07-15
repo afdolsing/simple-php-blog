@@ -1,5 +1,5 @@
 <?php
-if(!defined("INDEX")) die("page not found");
+if (!defined("INDEX")) die("page not found");
 include("db/config.php");
 ?>
 
@@ -13,7 +13,7 @@ include("db/config.php");
     <ul>
         <?php
         $article = mysqli_query($conn, "SELECT * FROM blog_article ORDER BY article_id DESC LIMIT 5");
-        while($data = mysqli_fetch_array($article)){
+        while ($data = mysqli_fetch_array($article)) {
             echo "<li><a href='?preview=article_detail&id=
             $data[article_id]'>$data[title]</a></li>";
         }

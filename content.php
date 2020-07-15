@@ -20,7 +20,7 @@ else $preview = "home";
     elseif ($preview == "search")
         include("content/search.php");
     elseif ($preview == "comment_process")
-        include("content/comment_process.php");  
+        include("content/comment_process.php");
 
     else echo "page not found in content";
     ?>

@@ -1,8 +1,6 @@
 <?php
-if(!defined("INDEX")) die("page not found");
+if (!defined("INDEX")) die("page not found");
 include('db/config.php');
-// mysqli_query($conn, "UPDATE article SET hits=hits+1
-// WHERE article_id='$_GET[id]'");
 
 $article = mysqli_query($conn, "SELECT * FROM blog_article WHERE article_id = '$_GET[id]'");
 $data = mysqli_fetch_array($article);
@@ -14,8 +12,8 @@ $content = $data['content'];
         <?= $data['title'] ?>
     </h2>
     <p>
-        <?php if($data['image_name'] != "") ?>
-        <img src="image/article/<?= $data['image_name']; ?>" class="image-article" width="350">
+        <?php if ($data['image_name'] != "") ?>
+        <img src="image/article/<?= $data['image_name']; ?>" class="image-article" width="200">
         <?= $content ?>
     </p>
 </div>
@@ -27,12 +25,12 @@ $comment_result = mysqli_num_rows(($comment));
 ?>
 <h3><?= $comment_result; ?> Comment</h3>
 <?php
-while($datacomment = mysqli_fetch_array($comment)){
+while ($datacomment = mysqli_fetch_array($comment)) {
 ?>
-<div class="comment">
-    <h4><?= $datacomment['name']?> - <?= $datacomment['date']?></h4>
-    <p><?= $datacomment['comment']?></p>
-</div>
+    <div class="comment">
+        <h4><?= $datacomment['name'] ?> - <?= $datacomment['date'] ?></h4>
+        <p><?= $datacomment['comment'] ?></p>
+    </div>
 <?php } ?>
 
 <!-- bagian 2 -->
