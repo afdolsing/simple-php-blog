@@ -73,6 +73,12 @@ body{
     margin-right: 5px;
     border-bottom: 2px solid #ccc;
 }
+.content-article{
+    margin-top: 10px;
+    float: right;
+    font-size: 15px;
+    text-align: justify;
+}
 .paging{
     text-align: center;
 }

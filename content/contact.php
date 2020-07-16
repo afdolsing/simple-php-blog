@@ -1,30 +1,29 @@
 <?php
-if(!defined("INDEX")) die("page not found");
-include('db/config.php');
+    if(!defined("INDEX")) die("page not found");
+    include('db/config.php');
 
-if(isset($_POST['send'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $mess = $_POST['mess'];
+    if(isset($_POST['send'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $mess = $_POST['mess'];
 
-    $subject = "message from visitor";
-    $from = "my.email@gmail.com";
-    $date = date('Y-m-d');
+        $subject = "message from visitor";
+        $from = "my.email@gmail.com";
+        $date = date('Y-m-d');
 
-    mail($email,$subject,$mess,$from);
+        mail($email,$subject,$mess,$from);
 
-    mysqli_query($conn, "INSERT INTO blog_message SET
-                name = '$name',
-                email = '$email',
-                subject = '$subject',
-                message = '$mess',
-                date = '$date'");
-    
-    echo "message has sent";
-    echo "<meta http-equiv='refresh'
-    content='1; url=?preview=contact'>";
-}
-
+        mysqli_query($conn, "INSERT INTO blog_message SET
+                    name = '$name',
+                    email = '$email',
+                    subject = '$subject',
+                    message = '$mess',
+                    date = '$date'");
+        
+        echo "message has sent";
+        echo "<meta http-equiv='refresh'
+        content='1; url=?preview=contact'>";
+    }
 ?>
 <h2>Contact us</h2>
 <form action="" method="POST">

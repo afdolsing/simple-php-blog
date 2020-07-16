@@ -1,5 +1,5 @@
 <?php
-if(!defined("INDEX")) die("page not found");
+    if(!defined("INDEX")) die("page not found");
 ?>
 <ul class="">
     <li><a href="admin.php">Home</a></li>

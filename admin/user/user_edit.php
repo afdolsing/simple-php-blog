@@ -25,9 +25,9 @@ if(isset($_POST['edit'])){
         }else{
             $password = password_hash($password, PASSWORD_DEFAULT);
             // update userbaru ke database
-            mysqli_query($conn, "UPDATE blog_users SET
-                username = '$username',
-                password = '$password'");
+            mysqli_query($conn, "UPDATE blog_users 
+                SET username = '$username',
+                    password = '$password'");
             echo "success edit";
         }
     }

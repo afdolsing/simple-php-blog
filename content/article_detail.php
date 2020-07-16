@@ -1,10 +1,11 @@
 <?php
-if (!defined("INDEX")) die("page not found");
-include('db/config.php');
+    if (!defined("INDEX")) die("page not found");
+    include('db/config.php');
 
-$article = mysqli_query($conn, "SELECT * FROM blog_article WHERE article_id = '$_GET[id]'");
-$data = mysqli_fetch_array($article);
-$content = $data['content'];
+    $article = mysqli_query($conn, "SELECT * FROM blog_article 
+                                    WHERE article_id = '$_GET[id]'");
+    $data = mysqli_fetch_array($article);
+    $content = $data['content'];
 ?>
 
 <div class="article">
@@ -13,25 +14,30 @@ $content = $data['content'];
     </h2>
     <p>
         <?php if ($data['image_name'] != "") ?>
-        <img src="image/article/<?= $data['image_name']; ?>" class="image-article" width="200">
-        <?= $content ?>
+            <img src="image/article/<?= $data['image_name'] ?>" class="image-article" width="200">
+           
     </p>
+    <p class=content-article>
+    <?= $content ?>
+</p>
+    
 </div>
 
 <!-- bagian 1 -->
 <?php
-$comment = mysqli_query($conn, "SELECT * FROM blog_comment WHERE article_id = '$_GET[id]'");
-$comment_result = mysqli_num_rows(($comment));
+    $comment = mysqli_query($conn, "SELECT * FROM blog_comment 
+                                    WHERE article_id = '$_GET[id]'");
+    $comment_result = mysqli_num_rows(($comment));
 ?>
-<h3><?= $comment_result; ?> Comment</h3>
+<h3><?= $comment_result ?> Comment</h3>
 <?php
-while ($datacomment = mysqli_fetch_array($comment)) {
+    while ($datacomment = mysqli_fetch_array($comment)) :
 ?>
-    <div class="comment">
-        <h4><?= $datacomment['name'] ?> - <?= $datacomment['date'] ?></h4>
-        <p><?= $datacomment['comment'] ?></p>
-    </div>
-<?php } ?>
+        <div class="comment">
+            <h4><?= $datacomment['name'] ?> - <?= $datacomment['date'] ?></h4>
+            <p><?= $datacomment['comment'] ?></p>
+        </div>
+<?php endwhile ?>
 
 <!-- bagian 2 -->
 <h3>Comment content</h3>
