@@ -1,5 +1,5 @@
 <?php 
-include("../db/config.php"); 
+
 $id = $_GET['id'];
 
 $result = mysqli_query($conn, "SELECT * FROM blog_page WHERE page_id='$id'");

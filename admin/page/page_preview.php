@@ -11,8 +11,7 @@
     </tr>
 
     <?php
-    include('../db/config.php');
-
+    
     $no = 1;
     $sql = mysqli_query($conn,"SELECT * FROM blog_page");
     while($data=mysqli_fetch_array($sql)):

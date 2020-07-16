@@ -1,19 +1,15 @@
 <?php
+    if(isset($_POST['add'])){
+        $title = $_POST['title'];
+        $content = $_POST['content'];
+        // input database
+        mysqli_query($conn, "INSERT INTO blog_page (title, content) VALUE (
+            '$title', '$content')");
 
-include("../db/config.php");
-
-if(isset($_POST['add'])){
-    $title = $_POST['title'];
-    $content = $_POST['content'];
-    // input database
-    mysqli_query($conn, "INSERT INTO blog_page (title, content) VALUE (
-        '$title', '$content')");
-
-echo "Add Success";
-echo "<meta http-equiv='refresh'
-content='1; url=?preview=page'>";
-
-}
+    echo "Add Success";
+    echo "<meta http-equiv='refresh'
+    content='1; url=?preview=page'>";
+    }
 ?>
 
 <h2>Add Page</h2>

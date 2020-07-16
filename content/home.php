@@ -1,6 +1,5 @@
 <?php
     if(!defined("INDEX")) die("page not found");
-    include("db/config.php");
 
     $page = isset($_GET['page']) ? $_GET['page'] : 1;
     // line -> batas (jumlah article)

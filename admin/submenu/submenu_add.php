@@ -1,7 +1,5 @@
 <?php
 
-include("../db/config.php");
-
 if(isset($_POST['add'])){
     $title = $_POST['title'];
     $menu_id = $_POST['parent'];

@@ -1,6 +1,5 @@
 <?php
     if(!defined("INDEX")) die("page not found");
-    include('db/config.php');
 ?>
 <h2>Galerry</h2>
 <div class="gallery">

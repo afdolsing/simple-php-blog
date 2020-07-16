@@ -1,6 +1,4 @@
 <?php
-
-include('../db/config.php');
 // id yg akan dihapus..
 $id = $_GET['id'];
 

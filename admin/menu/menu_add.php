@@ -1,17 +1,14 @@
 <?php
+    if(isset($_POST['add'])){
+        $title = $_POST['title'];
+        $link = $_POST['link'];
+        $thread = $_POST['thread'];
+        // input database
+        mysqli_query($conn, "INSERT INTO blog_menu (title, link, thread) VALUE (
+            '$title', '$link', '$thread')");
 
-include("../db/config.php");
-
-if(isset($_POST['add'])){
-    $title = $_POST['title'];
-    $link = $_POST['link'];
-    $thread = $_POST['thread'];
-    // input database
-    mysqli_query($conn, "INSERT INTO blog_menu (title, link, thread) VALUE (
-        '$title', '$link', '$thread')");
-
-    header("Location: ?preview=menu");
-}
+        header("Location: ?preview=menu");
+    }
 ?>
 
 <h2>Add Menu</h2>

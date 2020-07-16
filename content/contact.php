@@ -1,6 +1,5 @@
 <?php
     if(!defined("INDEX")) die("page not found");
-    include('db/config.php');
 
     if(isset($_POST['send'])){
         $name = $_POST['name'];

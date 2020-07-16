@@ -1,10 +1,8 @@
 <?php 
-include("../db/config.php"); 
-$id = $_GET['id'];
+    $id = $_GET['id'];
 
-$result = mysqli_query($conn, "SELECT * FROM blog_article WHERE article_id='$id'");
-$data = mysqli_fetch_array($result);
-
+    $result = mysqli_query($conn, "SELECT * FROM blog_article WHERE article_id='$id'");
+    $data = mysqli_fetch_array($result);
 ?>
 
 <h2>Edit Article</h2>

@@ -1,6 +1,5 @@
 <?php
     if(!defined("INDEX")) die("page not found");
-    include("db/config.php");
 
     $article = mysqli_query($conn, "SELECT * FROM blog_page 
                                     WHERE page_id ='$_GET[id]'");

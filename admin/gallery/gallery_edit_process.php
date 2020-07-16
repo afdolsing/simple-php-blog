@@ -1,5 +1,4 @@
 <?php
-include('../db/config.php');
 
 if(isset($_POST['edit'])){
     // $_FILES = Array dua dimensi untuk mennyimpan file

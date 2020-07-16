@@ -1,7 +1,5 @@
 <?php
 
-include("../db/config.php");
-
 if(isset($_POST['add'])){
     // $_FILES = Array dua dimensi untuk mennyimpan file
     $image_name = $_FILES['image']['name'];

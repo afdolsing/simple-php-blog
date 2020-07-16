@@ -12,8 +12,6 @@
     </tr>
 
     <?php
-    include('../db/config.php');
-
     $no = 1;
     $sql = mysqli_query($conn,"SELECT * FROM blog_menu ORDER BY thread");
     while($data=mysqli_fetch_array($sql)):

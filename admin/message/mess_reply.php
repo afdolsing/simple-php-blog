@@ -1,5 +1,4 @@
 <?php
-include('../db/config.php');
 $sql = mysqli_query($conn, "SELECT * FROM blog_message WHERE mess_id='$_GET[id]'");
 $data = mysqli_fetch_array($sql);
 
