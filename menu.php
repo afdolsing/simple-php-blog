@@ -1,6 +1,5 @@
 <?php
     if (!defined("INDEX")) die("page not found");
-    include("db/config.php");
 ?>
 
 <ul class="nav">
