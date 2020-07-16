@@ -1,2 +1,2 @@
 # preview
-![blog](https://user-images.githubusercontent.com/51188767/87494528-7422c680-c679-11ea-82b4-293797d34d27.PNG)
+![new blog](https://user-images.githubusercontent.com/51188767/87617790-6a18ca80-c742-11ea-920b-24b714c8f90e.PNG)
