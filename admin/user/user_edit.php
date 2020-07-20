@@ -5,7 +5,7 @@ if(!isset($_SESSION['login'])){
     header('location: ../index.php');
     exit;
 }
-include('../db/config.php');
+require('../db/config.php');
 $sql = mysqli_query($conn, "SELECT * FROM blog_users");
 $data = mysqli_fetch_array($sql);
 

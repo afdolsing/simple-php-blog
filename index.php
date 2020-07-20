@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("db/config.php");
+    require("db/config.php");
     // simpan INDEX sebagai nilai tetap
     define("INDEX", true);
 ?>
